@@ -19,3 +19,13 @@ $routes->get('/coder', 'Carrera::showIngenieria');
 
 $routes->get('/creativo', 'Carrera::showDesing');
 $routes->get('/marketing', 'Carrera::showDesing');
+
+//Nuevas rutas para navegar desde DASHBOARD
+$routes->get('/clientes','Cliente::index');
+$routes->get('/proveedores','Proveedor::index');
+$routes->get('/productos','Producto::index');
+
+$routes->get('/diarios','Reporte::diarios');
+$routes->get('/semanales','Reporte::semanales');
+$routes->get('/mensuales','Reporte::mensuales');
+$routes->get('/personalizados','Reporte::personalizados');
