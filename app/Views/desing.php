@@ -7,5 +7,13 @@
 </head>
 <body>
     <h1>Estas en Diseño Gráfico Digital</h1>
+    <h2>Desarrollador: <?= $desarrollador ?></h2>
+    <hr>
+
+    <ul>
+        <?php foreach ($aplicaciones as $app): ?>
+            <li><?= $app ?></li>
+        <?php endforeach; ?>
+    </ul>
 </body>
 </html>

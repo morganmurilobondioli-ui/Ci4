@@ -7,6 +7,13 @@
 </head>
 <body>
     <h1>Estas en Ingeniería de Software</h1>
-    <p>Desarrollador: <?= $desarrollador ?></p>
+    <h2>Desarrollador: <?= $desarrollador ?></h2>
+    <hr>
+
+    <ul>
+        <?php foreach ($lenguajes as $lp): ?>
+            <li><?= $lp ?></li>
+        <?php endforeach; ?>
+    </ul>
 </body>
 </html>
